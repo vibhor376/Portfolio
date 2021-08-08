@@ -1,0 +1,443 @@
+body{
+	margin: 0px;
+}
+
+/*Body header*/
+
+#head{
+	background-image: url("resume_image.png");
+    width:  auto;
+	height:25vw;
+	margin: 0px;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+/*Horizontal-list*/
+
+.horizontal-list{
+	list-style: none;
+	padding-left: 0px;
+	padding-top: 30px;
+}
+.horizontal-list li{
+	display:inline-block;
+	margin: 0px 8px 8px 0px;
+}
+.horizontal-list li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.nav-panel li a{
+	transition: color 0.5s,border-bottom 4s;
+}
+.nav-panel li a:hover{
+    color: black;
+    border-bottom:1px solid black;
+    
+}
+
+/*Name*/
+
+.name{
+	padding-top: 50px;
+	color: white;
+	font-size: 50px;
+	font-weight: 700;
+}
+.text-center{
+	text-align: center;
+}
+
+/*Social icons*/
+
+.social-icons li img{
+    height: 20px;
+    width: 20px;
+}
+.social-icons li a {
+ padding: 5px;
+ font-size: 2 rem;
+}
+.social-icons li a img{
+ border-radius: 50%;
+}
+.social-icons li a img:hover{
+ box-shadow: 0px 0px 3px 3px white;
+ /*rgba(0,0,0,0.5)*/
+}
+
+/*Section*/
+section {
+    width: 100%;
+    /*height: 75vh;*/
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+section:nth-child(even){
+    background-color: white;
+
+}
+section:nth-child(odd){
+    background-color:snow;
+}
+/*About*/
+
+#about{
+    height: auto;
+    position: relative;
+    width: 70%;
+	margin-left: 200px;
+	margin-right: 200px;
+	text-align: justify;
+    text-justify: inter-word;
+    color: darkslategrey;
+    font-weight: 500;
+    word-spacing: 4px;
+    font-family: "Noto Sans TC";
+    font-size: 18px;
+}
+.my-photo img{
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+  margin-top: -70px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.my-photo img:hover {
+-webkit-box-shadow: 0px 0px 100px 0px rgba(255,165,0,1);
+-moz-box-shadow: 0px 0px 100px 0px rgba(255,165,0,1);
+box-shadow: 0px 0px 5px 0px rgba(255,165,0,1);
+transition: .8s ease;
+}
+
+/*Skills*/
+
+.section-heading{
+    width: auto;
+    padding: 1.2% 0.7% 0.7%;
+    margin: 10px auto;
+    font-weight: 400;
+}
+.section-heading span{
+    font-size: 2.4rem;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 0.7%;
+    margin-right: 0.5rem;
+}
+.mb75px{
+    margin-bottom: 75px;
+}
+.skills-display{
+    width: 70%;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.different-skills{
+    width: 11rem;
+    height: 2.2rem;
+    border-radius: 1rem;
+    margin: 25px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.different-skills div span{
+    color: white;
+    font-size: 1rem;
+    /*font-family: Arial,sans-serif;*/
+    margin-left: 10px;
+    padding-top: 5px;
+    vertical-align: middle;
+}
+
+/*Portfolio*/
+
+.portfolio-container{
+    display: flex;
+    flex-wrap: wrap;
+    /*flex-direction: column;*/
+    justify-content: space-around;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+.portfolio-showcase{
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    max-width: 300px;
+}
+.portfolio-showcase img {
+    width: 100%;
+    height: 100%;
+}
+.portfolio-showcase:hover {
+    box-shadow: 0 0 20px #74ADC8;
+}
+.folio-details{
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    padding: 10px;
+}
+.portfolio-showcase:hover .folio-details{
+    background-color: #80808078;
+    color: white;
+}
+ /*WorkExperience*/
+ #work-experience{
+    position: relative;
+    width: 75%;
+   
+}
+.timeline-box {
+    padding: 5px;
+    width: 40%;
+    min-height: 200px;
+    position: relative;
+    /*margin: 20px;*/
+    left: 5%;
+    text-align: right;
+    /*margin-top: 5px;*/
+    /*margin-bottom: 5px;*/
+    /*border: 2px solid black;*/
+}
+.timeline-box::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: lightgrey;
+    top: 25%;
+    margin-top: 0px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.timeline-box:nth-child(2n) {
+    left: 53%;
+}
+
+.timeline-box:nth-child(2n+1)::after {
+    right: -11.8%;
+}
+
+.timeline-box:nth-child(2n)::after {
+    left: -9%;
+}
+#timeline-divider{
+    position: absolute;
+    width: 0;
+    top: 10%;
+    left: 50%;
+    border: 1px dashed #0096fa6b;
+    height: 66%;
+    color: #433E3F;
+}
+#timeline-divider .timeline-traveller {
+    position: sticky;
+    top: 135px;
+    z-index: 2;
+}
+#timeline-divider i{
+    transform: rotate(90deg);
+    margin-top: -35px;
+    width: 10%;
+    height: 10%;
+    display: block;
+    color: #2857a4;
+}
+.logo {
+    position: absolute;
+    width: 50px;
+    overflow: hidden;
+}
+
+.logo > img {
+    width: 100%;
+}
+.experience-designation {
+    font-size: 1.4rem;
+}
+
+.experience-company-name {
+    margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.experience-duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
+}
+
+.experience-description {
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+}
+
+   /*Education*/
+   #education-timeline{
+    position: relative;
+    width: 75%;
+    /*border: 2px solid black;*/
+ }
+ .marks{
+    font.-size: 1.2rem;
+    font-weight: 400;
+ }
+
+  /*Contact*/
+#contact{
+     /*background-image: linear-gradient(90deg, skyblue 0%,#403066 25%);*/
+     /*#403066*/
+     /*#2857a4*/
+     background-image: radial-gradient(rgb(32, 48, 224), rgb(31, 56, 217), rgb(30, 64, 210), rgb(28, 72, 203), rgb(27, 80, 196), rgb(26, 88, 189), rgb(25, 97, 183), rgb(24, 105, 176), rgb(23, 113, 169), rgb(21, 121, 162), rgb(20, 129, 155), rgb(19, 137, 148));
+}
+#contact-container{
+    display: flex;
+}
+#logo-contact{
+    color: white;
+}
+#heading-contact{
+    color: white;
+}
+#form-display{
+    width: 50%;
+}
+#contact-form-container{
+    margin-left: 20%;
+}
+#address-display{
+    margin-left: 10%;
+    width: 40%;
+    color: white;
+}
+#address-display h3{
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+.my-address {
+    margin: 20px;
+}
+
+.my-phone-no{
+    margin: 20px;
+}
+.my-email-address{
+    margin: 20px;
+}
+#contact-form-container input,textarea{
+    max-width: 90%;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    background:transparent;
+    width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    color: grey;
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+#contact-form-container button[type="submit"]{
+    border: 3px solid white;
+    padding: 0.8em;
+    cursor: pointer;
+    border: 2px solid white;
+    background: transparent;
+    font-size: 1rem;
+    margin top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+}
+#contact-form-container button:hover{
+  background: white;
+  color: grey;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+#social-icons-bottom .social-icons li img{
+    height: 30px;
+    width: 30px;
+    margin: 15px;
+}
+#social-icons-bottom .social-icons li a img{
+ border-radius: 50%;
+}
+#social-icons-bottom .social-icons li a img:hover{
+ box-shadow: 0px 0px 6px 6px white;
+ /*rgba(0,0,0,0.5)*/
+}
+
+
+/*percent class*/
+
+.eighty-five-percent{
+    width: 85%;
+    height: inherit;
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius:0.8rem;
+}
+.fifty-percent{
+    width: 50%;
+    height: inherit;
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius:0.8rem;
+}
+.sixty-five-percent{
+    width: 65%;
+    height: inherit;
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius:0.8rem;
+}
+
+ /*colors class*/
+ .mb-grey{
+    background-color: lightgrey;
+}
+.mb-brown{
+    background-color: brown;
+}
+.mb-teal{
+    background-color: teal;
+}
+.mb-blue{
+    background-color: blue;
+}
+.mb-light-purple {
+    background-color: #93738c;
+}
+.mb-orange {
+    background-color: orange;
+
+}
