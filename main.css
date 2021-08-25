@@ -265,22 +265,22 @@ transition: .8s ease;
 .logo > img {
     width: 100%;
 }
-.experience-designation {
+/*.experience-designation {
     font-size: 1.4rem;
-}
+}*/
 
 .experience-company-name {
     margin: 5px 0 0;
     color: #eb822d;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
-
+/**/
 .experience-duration {
     color: #9e9b9b;
     font-weight: 100;
     color: grey;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
    /*Education*/
@@ -290,7 +290,7 @@ transition: .8s ease;
     /*border: 2px solid black;*/
  }
  .marks{
-    font.-size: 1.2rem;
+    font-size: 1.2rem;
     font-weight: 400;
  }
 
@@ -448,9 +448,9 @@ button:focus {
     .timeline-box:nth-child(2n)::after{
         left: 2% ;
     }
-    .experience-designation {
+    /*.experience-designation {
         font-size: 1rem;
-     }
+     }*/
      .logo{
         left: 8%;
         width: 9%;
@@ -461,14 +461,15 @@ button:focus {
         margin: 5px;
         color: #eb822d;
         font-weight: 300;
-        font-size: 1rem;
-    }
-    .experience-designation{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .experience-duration{
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         text-align: right;
+    }
+    .marks{
+        font-size: 0.6rem;
+        font-weight: 200;
     }
     .section-heading span{
         font-size: 1.4rem;
