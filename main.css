@@ -7,8 +7,8 @@ body{
 #head{
 	background-image: url("resume_image.png");
     width:  auto;
-	height:25vw;
-	margin: 0px;
+	height:60vh;
+	/*margin: 0px;*/
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -42,9 +42,9 @@ body{
 /*Name*/
 
 .name{
-	padding-top: 50px;
+	margin-top: 8%;
 	color: white;
-	font-size: 50px;
+	font-size: 3rem;
 	font-weight: 700;
 }
 .text-center{
@@ -92,8 +92,8 @@ section:nth-child(odd){
     height: auto;
     position: relative;
     width: 70%;
-	margin-left: 200px;
-	margin-right: 200px;
+	left: 15%;
+	right:15%;
 	text-align: justify;
     text-justify: inter-word;
     color: darkslategrey;
@@ -103,12 +103,13 @@ section:nth-child(odd){
     font-size: 18px;
 }
 .my-photo img{
-  height: 210px;
-  width: 210px;
+  height: 13%;
+  width: 13%;
   border-radius: 50%;
   margin-top: -70px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+
 .my-photo img:hover {
 -webkit-box-shadow: 0px 0px 100px 0px rgba(255,165,0,1);
 -moz-box-shadow: 0px 0px 100px 0px rgba(255,165,0,1);
@@ -119,17 +120,12 @@ transition: .8s ease;
 /*Skills*/
 
 .section-heading{
-    width: auto;
-    padding: 1.2% 0.7% 0.7%;
-    margin: 10px auto;
     font-weight: 400;
 }
 .section-heading span{
     font-size: 2.4rem;
     color: #2857a4;
     display: inline-block;
-    padding-top: 0.7%;
-    margin-right: 0.5rem;
 }
 .mb75px{
     margin-bottom: 75px;
@@ -215,16 +211,13 @@ transition: .8s ease;
     /*margin: 20px;*/
     left: 5%;
     text-align: right;
-    /*margin-top: 5px;*/
-    /*margin-bottom: 5px;*/
-    /*border: 2px solid black;*/
 }
 .timeline-box::after {
     content: '';
     position: absolute;
-    width: 15px;
-    height: 15px;
-    background-color: lightgrey;
+    width: 10px;
+    height: 10px;
+    background-color: red;
     top: 25%;
     margin-top: 0px;
     border-radius: 50%;
@@ -290,13 +283,6 @@ transition: .8s ease;
     font-size: 1rem;
 }
 
-.experience-description {
-    font-size: 14px;
-    padding: 2px;
-    color: grey;
-    line-height: 20px;
-}
-
    /*Education*/
    #education-timeline{
     position: relative;
@@ -325,14 +311,14 @@ transition: .8s ease;
     color: white;
 }
 #form-display{
-    width: 50%;
+    width: 40%;
 }
 #contact-form-container{
-    margin-left: 20%;
+    margin-left: 8%;
 }
 #address-display{
     margin-left: 10%;
-    width: 40%;
+    width: 50%;
     color: white;
 }
 #address-display h3{
@@ -369,7 +355,7 @@ transition: .8s ease;
     background: transparent;
     font-size: 1rem;
     margin top: 5%;
-    margin-left: 35%;
+    margin-left: 30%;
     border-radius: 2px;
     font-weight: 700;
     color: white;
@@ -440,4 +426,99 @@ button:focus {
 .mb-orange {
     background-color: orange;
 
+}
+.ham i{
+    visibility: hidden;
+}
+@media screen and (max-width: 600px){
+    #work-experience{
+    position: relative;
+    width:75%;  
+   }
+    #timeline-divider{
+        left: 5%;
+    }
+    .timeline-box{
+        left: 2% !important;
+        width: 100%;
+    }
+    .timeline-box:nth-child(2n+1)::after{
+        left: 2% ;
+    }
+    .timeline-box:nth-child(2n)::after{
+        left: 2% ;
+    }
+    .experience-designation {
+        font-size: 1rem;
+     }
+     .logo{
+        left: 8%;
+        width: 9%;
+        height: 43px;
+        top: 5%;
+     }
+     .experience-company-name {
+        margin: 5px;
+        color: #eb822d;
+        font-weight: 300;
+        font-size: 1rem;
+    }
+    .experience-designation{
+        font-size: 1rem;
+    }
+    .experience-duration{
+        font-size: 0.8rem;
+        text-align: right;
+    }
+    .section-heading span{
+        font-size: 1.4rem;
+    }
+    .my-photo img{
+        width: 24%;
+        height: 24%;
+    }
+    .name{
+        font-size: 2rem;
+    }
+    #social-icons-bottom .social-icons li img{
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+    }
+    #address-display h3{
+    font-weight: 400;
+    font-size: 0.9rem;
+    }
+    .my-address {
+     margin: 10px;
+    }
+
+    .my-phone-no{
+        margin: 10px;
+    }
+    .my-email-address{
+        margin: 10px;
+    }
+    #address-display{
+    margin-left: 10%;
+    width: 50%;
+    color: white;
+    font-size: 0.8rem;
+    }
+    .mydisp{
+        visibility: hidden;
+    }
+    .ham i{
+        visibility: visible;
+    }
+    .ham i{
+        width: 20px;
+        height: 20px; 
+        margin-left: 95%;
+        color: #fff;
+    }
+    .ham i: hover{
+        width: 30px;
+        height: 30px;
+    }
 }
