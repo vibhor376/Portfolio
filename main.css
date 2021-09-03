@@ -203,6 +203,11 @@ transition: .8s ease;
     width: 75%;
    
 }
+#work-experience img{
+    width: 50px;
+    height: 50px;
+}
+.logo{left:-2%;}
 .timeline-box {
     padding: 5px;
     width: 40%;
@@ -238,7 +243,7 @@ transition: .8s ease;
     position: absolute;
     width: 0;
     top: 10%;
-    left: 50%;
+    left: 49%;
     border: 1px dashed #0096fa6b;
     height: 66%;
     color: #433E3F;
@@ -290,7 +295,7 @@ transition: .8s ease;
     /*border: 2px solid black;*/
  }
  .marks{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
  }
 
